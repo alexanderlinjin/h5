@@ -1,0 +1,65 @@
+
+html,body{  
+                height:100%;  
+                width:100%;  
+}
+canvas{
+    display: block;
+}
+.login_box{
+    padding: 15px;
+}
+.border{
+    border: 1px solid #000;
+    text-align: center;
+    
+}
+.head{
+    position:relative;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.head_left{
+    float: left;
+}
+.head_right{
+    float: right;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+.btn_box{
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.foot_btn{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.checkbox{
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.foget{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    color:#6E6E6E;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.box-shadow-3{  
+  -webkit-box-shadow:0 0 10px rgba(150, 150, 150, .25);  
+  -moz-box-shadow:0 0 10px rgba(150, 150, 150, .25);  
+  box-shadow:0 0 10px rgba(150, 150, 150, .25);  
+}  

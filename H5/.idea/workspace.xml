@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3dfcc770-3ad1-4df0-823d-d9e0099ac1f2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/config.json" afterPath="$PROJECT_DIR$/software/shadowsocksr/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/debian/rules" afterPath="$PROJECT_DIR$/software/shadowsocksr/debian/rules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/initcfg.bat" afterPath="$PROJECT_DIR$/software/shadowsocksr/initcfg.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/local.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/local.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/obfsplugin/auth.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/obfsplugin/auth.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/server.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/shell.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/shadowsocks/shell.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/assert.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/assert.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/jenkins.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/jenkins.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/libsodium/install.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/libsodium/install.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/setup_tc.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/setup_tc.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/socksify/install.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/socksify/install.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/test.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/test_command.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/test_command.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/test_daemon.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/test_daemon.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/test_large_file.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/test_large_file.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/tests/test_udp_src.sh" afterPath="$PROJECT_DIR$/software/shadowsocksr/tests/test_udp_src.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/software/shadowsocksr/utils/autoban.py" afterPath="$PROJECT_DIR$/software/shadowsocksr/utils/autoban.py" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/software/shadowsocksr" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="80" />
+    <option name="y" value="44" />
+    <option name="width" value="1281" />
+    <option name="height" value="704" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3dfcc770-3ad1-4df0-823d-d9e0099ac1f2" name="Default" comment="" />
+      <created>1493881070018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493881070018</updated>
+      <workItem from="1493881072599" duration="622000" />
+      <workItem from="1493881961803" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="666000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="80" y="44" width="1281" height="704" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>

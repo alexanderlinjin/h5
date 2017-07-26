@@ -1,0 +1,80 @@
+body{
+    background-image:url(../images/back.gif);
+}
+.login_div{
+    z-index: 2;
+    position: relative;
+}
+.login_header{
+    position:relative;
+    width: 520px;
+    margin: 12px auto;
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-bottom: 38px;
+}
+
+.head_left{
+    float: left;
+    position: relative;
+}
+.head_right{
+    float: right;
+}
+.login_box{
+    position: relative;
+    padding-bottom: 38px;
+    padding-top: 38px;
+    width: 520px;
+    opacity: 1;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 3px;
+}
+.logo{
+    height: 64px;
+    width: 256px;
+    margin: 0 auto 10px;
+    margin-top: 0;
+    background-position: 0 -202px;
+}
+.input_box{
+    width: 440px;
+    margin: 0 auto;
+}
+.login_input_box{
+    width: 440px;
+    margin: 0 auto;
+    height: 350px;
+}
+.input-group{
+    width: 440px;
+    padding: 13px;
+}
+.checkbox{
+    width: 400px;
+    margin: 0 auto;
+}
+.passwprd_a{
+    float: right;
+}
+.btn-group{
+    padding: 20px;
+    width: 440px;
+    margin: 0 auto;
+}
+.btn-group a{
+    width: 400px;
+    height: 52px;
+    line-height: 32px;
+}
+.login_footer{
+    width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+.head_left a,.head_right a,.login_footer a{
+    color: #fff;
+}
+

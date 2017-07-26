@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    z-index: 999;
+}
+.navbar-brand{
+    font-size: 13px;
+}
+.navbar-collapse{
+    background-color:#f8f8f8;
+}
+.user_button{
+    text-align: center;
+    height: 50px;
+    line-height: 50px
+}
+.user_button .btn{
+    margin-left: 10px;
+}
+.index_login{
+    float:left;
+    height:50px;
+    padding:15px 1px;
+    font-size:13px;
+    line-height:20px;
+}
+.logo{
+    text-align: center;
+}
+.search{
+    padding: 15px;
+}
+.phone_right{
+    float: right;
+    padding: 15px;
+    list-style: none;
+}
+.nav-pills{
+    border-bottom: 2px solid #2780e3;
+    padding-top: 20px;
+}
+.middle_box{
+    padding: 0;
+    padding-bottom: 20px;
+}
+.carousel{
+    padding: 0;
+}
+
+.rolling_right{
+    border: 1px solid #e7e7e7;
+    float: right;
+}
+.rolling_right ul li{
+    padding: 3px;
+}
+.rolling_about{
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+}
+.user_logo{
+    border: 1px solid #e7e7e7;
+    width: 80px;
+    height: 80px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.phone_btn .btn{
+    padding: 0; 
+}
+.phone_btn .btn:hover,.phone_btn .btn:visited{
+    color: #2780e3;
+}
+
+.tab_box{
+    padding-right: 30px;
+    padding: 0;  
+    padding-top: 25px;
+    border-bottom: 1px solid #2780e3;
+}
+.product{
+    padding-top: 15px;
+}
+.thumbnail{
+    padding: 0;
+}
+.caption{
+    text-align: center;
+}
+.more .btn:hover,.more .btn:visited{
+    color: #2780e3;
+}
+.box-shadow{  
+  -webkit-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+  -moz-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+  box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+}  

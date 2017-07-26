@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.7/vue.min.js
+"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.17/vue-resource.js"></script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/demo1.css">
+  
+</head>
+
+<body>
+<div class="container" id="container">
+    <div class="row listCeneter">
+    <div class="head" id="head">
+        <h1>{{btitle}}</h1>
+        </div>
+    <div class="body" id="body">
+        <table align="center" v-cloak>
+        <thead>
+            <tr>
+            <td @click="sortBy('id')">{{groud.id}}</td>
+            <td @click="sortBy('name')">{{groud.name}}</td>
+            <td @click="sortBy('age')">{{groud.age}}</td>
+            <td @click="sortBy('sex')">{{groud.sex}}</td>
+            <td >{{groud.choose}}</td>
+            
+            </tr>
+            </thead>
+        <tbody>
+            <tr v-for="b in books">
+            <td>{{b.id}}</td>
+            <td>{{b.name}}</td>
+            <td>{{b.age}}</td>
+            <td>{{b.sex}}</td>
+                <template>
+                <td><input type="button" class="primary" value="删除" @click="delPeople()"></td>
+                </template>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    <div class="foot" id="foot">
+        <form class="row">
+        <ul>
+            <li><a>姓名</a><input type="text" v-model="book.name"></li>
+            <li><a>年龄</a><input type="text" v-model="book.age"></li>
+            <li><a>性别</a><input type="text" v-model="book.sex"></li>
+            <li><input type="button" class="btn primary" value="确认" @click="addBook()"></li>
+            </ul>
+        </form>
+        </div>
+    </div>
+    </div>  
+
+    
+    
+    
+    
+    
+    
+    
+    </body>
+    <script src="js/vue.js"></script>
+    <script>
+        //设置值
+        var vm = new Vue({
+            el:'#container',
+            sortparam:'',
+            data:{
+                btitle:'模拟表格',
+                groud:{
+                id:'序号',
+                name:'姓名',
+                age:'年龄',
+                sex:'性别',
+                choose:'选项'
+            },
+             book:{
+                id:0,
+                name:'',
+                age:'',
+                sex:'',
+                
+            },    
+            books:[]
+           
+            },
+            //计算
+            computed:{
+                sum:function(){
+                    var s=0;
+                    for(var i=0;i<=groud.length;i++){
+                        s+=Number(this.people[i].id)
+                    };
+                    return sum;
+                }
+            },
+              methods:{
+    addBook:function(){
+      this.book.id = this.books.length +1;
+      this.books.push(this.book);
+      this.book = '';
+      
+    },
+    delBook:function(book){
+      this.books.$remove(book);
+    },
+    sortBy:function(sortparam){
+      this.sortparam = sortparam
+    }
+  }
+        })
+   
+    </script>
+</html>

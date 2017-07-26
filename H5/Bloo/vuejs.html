@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="app1">
+            <my-component></my-component>
+        </div>
+        
+        <div id="testa">
+        <test-a></test-a>
+        </div>
+        
+        <!--该组件不会被渲染-->
+        <template id="test">
+        <div style="font-size:20px">你好啊ssss<h1>jjjjjjjj</h1></div>
+            
+        </template>
+    </body>
+    <script src="js/vue.js"></script>
+    <script>
+        Vue.component('test-a',{
+            template:'#test'
+        })
+        new Vue({
+            el:'#testa'
+        })
+    </script>

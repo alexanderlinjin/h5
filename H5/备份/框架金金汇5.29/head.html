@@ -1,0 +1,89 @@
+   <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>Spirit 8</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="index_css/index.css"   rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+<!-- 顶部导航条-->
+        <header>
+        <nav class="navbar navbar-default">
+  <div class="container" style="height:40px">
+    <div class="navbar-header">
+        <!--        小于992px时显示在顶端的button-->
+<!--        手机端顶部左边下拉按钮-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!--        手机端顶部搜索按钮-->
+        <button id="search" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float:right">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+<!--        手机端顶部用户按钮-->
+        <button id="user" type="button" class="navbar-toggle" style="float:right">
+        <span class="glyphicon glyphicon-user"></span>
+        </button>
+<!--        手机端顶部邮件按钮-->
+        <button id="email" type="button" class="navbar-toggle" style="float:right">
+        <span class="glyphicon glyphicon-envelope"></span>
+        </button>
+        <!--        以上为小于992px时显示在顶端的button-->
+<!--        以下a标签手机端不显示-->
+        <span >
+        <a class="navbar-brand hidden-xs">您好，欢迎访问金金汇，请先</a>
+        <a class="index_login hidden-xs" href="#">登录</a>
+        <a class="index_login hidden-xs">/</a>
+        <a class="index_login hidden-xs" href="#">注册</a>
+            </span>
+        </div>
+      
+         
+<!-- 个人中心下拉框，手机端为顶部右端下拉-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="font-size:13px">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">个人中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="font-size:13px;">
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">我的收藏</a></li>
+            <li><a href="#">我的发布</a></li>  
+      </ul>
+          </li>
+        <li><a href="#">帮助中心</a></li>
+      </ul>
+    </div>
+<!--      以上为下拉框-->
+<!--      以下为右边下拉搜索框,屏幕小于992px时显示，电脑上不显示-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right visible-xs">
+        <li>
+         <div class="input-group">
+       <input class="form-control" type="text">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button">搜索</button>
+    </span>
+  </div>
+          </li>
+      </ul>
+    </div>
+<!--    以上为右边下拉框  -->
+    </div>
+</nav>
+            </header>
+        
+         <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        </body>
+</html>

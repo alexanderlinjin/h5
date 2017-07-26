@@ -1,0 +1,168 @@
+.*{
+    padding: 0;
+    margin: 0;
+}
+html{
+   overflow-x: hidden;
+}
+.backtop{
+    position: fixed;
+    width: 5vw;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    background-color: #DCF2FF;
+    z-index: 9999;
+    top: 90vh;
+    left: 90vw;
+}
+.head-nav{
+    background-color: #DCF2FF;
+    z-index: 1000;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    border-bottom: 1px solid #fffff0;
+}
+.nav-left a,.nav-right a{
+    color:#8B8386;
+}
+/*去掉a标签href的下划线*/
+.row a:hover,.row a:visited,.row a:link{
+    text-decoration: none;
+}
+/*jq调用的样式*/
+.fixednav{
+    position:fixed;!importent;
+    z-index: 9999;
+    margin: 0;!importent;
+    width:100%;
+    padding: 15px;
+    background: #fff;
+    top:0px;!importent;
+    border-bottom: 1px solid #f1f1f1;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+}
+.fixednav a{
+    color: #555555;
+    font-size: 1.3em;
+}
+/*js调用的样式*/
+.nav-left{
+    position: relative;
+    padding: 5px;
+}
+.nav-right{
+    position: relative;
+    padding: 5px;
+    float: right;
+    text-align: right;
+}
+.page-img-bg{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    background-image: url(../images/daily_pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page-fade{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+}
+.page-fade{
+    position: absolute;
+    z-index: 1001;
+    top: 40vh;
+    margin-left: 5vw;
+    height: 50vh;
+}
+.page-fade a,.page-fade h2{
+    color: #000;
+}
+.page1{
+    position: relative;
+    z-index: 1001;
+    
+}
+/*page*/
+.page1{
+    margin-top: 1vh;
+}
+.page-left{}
+.page-right{
+    position: relative;
+}
+.botsimg{
+    position: absolute;
+}
+.show-a{
+    position: relative;
+    color: aliceblue;
+    font-size: 2em;
+}
+/*boder阴影*/
+.box-shadow{  
+  -webkit-box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+  -moz-box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+  box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+} 
+/*当高度不统一时，可以选择为每个标签根据不同像素设置统一的高度，根据你的情况去写响应式，通过媒体查询media实现。当然，解决方法很多，这只是其中一种*/
+/*这个是当屏幕大于1200px时才生效,小于1200px不生效,下面同理*/
+@media (min-width:1200px){
+    .page1,.page-left,.page-right,.botsimg{
+        height: 400px;
+    }
+    .show-a{
+        line-height: 400px;
+    }
+}
+/*这个时当屏幕大于992px,小于1199px时才生效,否则不生效,特别注意,and前后要加空格,否则错误语法*/
+@media (min-width:992px) and (max-width:1199px){
+    .page1,.page-left,.page-right,.botsimg{
+        height: 300px;
+    }
+    .show-a{
+        line-height: 300px;
+    }
+}
+/*当屏幕小于991px,大于768px时*/
+@media (min-width:768px) and (max-width:991px){
+    .page1,.page-left,.page-right,.botsimg{
+        height: 250px;
+    }
+    .show-a{
+        line-height: 250px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
+/*当小于767时*/
+@media (max-width:767px){
+    .page1,.page-left,.page-right,.botsimg{
+        height: 200px;
+    }
+    .show-a{
+        line-height: 200px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}

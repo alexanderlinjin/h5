@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>我的简历</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jianli.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="vbody">
+            <header class="page-img-bg">
+            <div class="page-fade animated fadeIn">
+            <h5>你好</h5>
+            <h1>我叫梁锦麟</h1>
+            <h4>往下拉</h4>
+            </div>
+        </header>
+<div class="head container box-shadow">
+    <div class="row">
+    <div class="myself col-xs-12 col-lg-3">
+        <ul>
+        <li><img class="touxiang" src="images/me.jpg"></li>
+        <li>{{name}}</li>
+        <li>{{job}}</li>
+        <li>{{phone}}</li>
+        <li>{{mail}}</li>
+        </ul>
+        </div>
+    <div class="about col-xs-12 col-lg-9">
+        <ul id="ex">
+        <li><h2>项目经验</h2></li>
+        <li class="li1"><h4>{{ex1}}</h4></li>
+        <li><p>{{ex2}}</p></li>
+        <li><p>{{ex3}}</p></li>
+        <li><p>{{ex4}}</p></li>
+            <li class="li1"><h4>{{ex21}}</h4></li>
+            <li><p>{{ex22}}</p></li>
+        <li class="li1"><h4>{{ex11}}</h4></li>
+        <li><p>{{ex12}}</p></li>
+        </ul>
+        <ul>
+        <li><h2>专业技能</h2></li>
+            <li><p>{{major1}}</p></li>
+            <li><p>{{major2}}</p></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <div class="body container">
+        <div class="page box-shadow row">
+            <div id="page1i1" class="col-xs-8">
+                <img class="img1" src="images/index.png">
+            </div>
+        <div id="page1i2" class="col-xs-4">
+        <img class="img2" src="images/pindex.png">
+         </div>
+        <h4>diy购物网</h4>
+        <h3>{{page1}}</h3>
+        </div>
+        <div class="page2 box-shadow row">
+        <div id="page2i" class="col-xs-8">
+            <img class="img1" src="images/code.png">
+            </div>
+        <div id="pagetext" class="col-xs-4">
+            <h3>关于此网页</h3>
+            <h4>{{page2}}</h4>
+            <h4>{{page22}}</h4></div>
+        </div>
+        <div><h2>非常感谢你百忙之中能看完这个网页，祝你工作顺利</h2></div>
+    </div>
+    </div>
+</body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vueConent.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+<script>
+    $(".about").waypoint(function() {
+    $(".about").addClass("animated fadeIn");
+}, { offset: '75%' });
+    
+    $("#page1i1").waypoint(function() {
+    $("#page1i1").toggleClass("animated zoomInLeft");
+}, { offset: '100%' });
+    
+    $("#page1i2").waypoint(function() {
+    $("#page1i2").toggleClass("animated zoomInRight");
+}, { offset: '100%' });
+    
+    $("#page2i").waypoint(function() {
+    $("#page2i").toggleClass("animated slideInLeft");
+}, { offset: '100%' });
+    
+    $("#pagetext").waypoint(function() {
+    $("#pagetext").toggleClass("animated slideInRight");
+}, { offset: '100%' });
+</script>
+</html>

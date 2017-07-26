@@ -1,0 +1,294 @@
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>Spirit 8</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="index_css/index.css"   rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- 顶部导航条-->
+        <header>
+        <nav class="navbar navbar-default">
+  <div class="container" style="height:50px"><!-- 在导航栏添加height属性，使其在响应式时下拉不推动其他元素-->
+    <div class="navbar-header">
+        <!--        小于992px时显示在顶端的button-->
+<!--        手机端顶部左边下拉按钮-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!--        手机端顶部搜索按钮-->
+        <button id="search" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" style="float:right">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+<!--        手机端顶部用户按钮-->
+        <button id="user" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" style="float:right">
+        <span class="glyphicon glyphicon-user"></span>
+        </button>
+<!--        手机端顶部邮件按钮-->
+        <button id="email" type="button" class="navbar-toggle" style="float:right">
+        <span class="glyphicon glyphicon-envelope"></span>
+        </button>
+        <!--        以上为小于992px时显示在顶端的button-->
+<!--        以下a标签手机端不显示-->
+        <span >
+        <a class="navbar-brand hidden-xs">您好，欢迎访问金金汇，请先</a>
+        <a class="index_login hidden-xs" href="#">登录</a>
+        <a class="index_login hidden-xs">/</a>
+        <a class="index_login hidden-xs" href="#">注册</a>
+            </span>
+        </div>
+      
+         
+<!-- 个人中心下拉框，手机端为顶部右端下拉-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" style="font-size:13px">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">个人中心 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" style="font-size:13px;">
+            <li><a href="#">我的主页</a></li>
+            <li><a href="#">我的收藏</a></li>
+            <li><a href="#">我的发布</a></li>  
+      </ul>
+          </li>
+        <li><a href="#">帮助中心</a></li>
+      </ul>
+    </div>
+<!--      以上为下拉框-->
+      
+<!--      user按钮下拉菜单-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+      <div class="user_button visible-xs">
+          <a class="btn btn-primary" href="#">注册</a><a class="btn btn-primary" href="#">登录</a>
+          </div>
+    </div>
+      
+<!--      以下为右边下拉搜索框,屏幕小于992px时显示，电脑上不显示-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav navbar-right visible-xs">
+        <li>
+         <div class="input-group">
+       <input class="form-control" type="text">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button">搜索</button>
+    </span>
+  </div>
+          </li>
+      </ul>
+    </div>
+<!--    以上为右边下拉框  -->
+    </div>
+</nav>
+            </header>
+        <!-- 顶部导航条--> 
+        <!-- 搜索，电脑端显示，当屏幕小于768px时隐藏-->
+        <div class="container hidden-xs">
+        <div class="row" style="height:76px">
+            <div class="logo  col-sm-4 col-md-4">
+            <a><img src="img/jjh.png"></a>
+            </div>
+            <div class="search col-sm-7 col-md-7">
+      <div class="input-group">
+        <input class="form-control" type="text">
+        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button" style="width:120px">搜索</button>
+        </span>
+      </div>
+    </div>
+            </div>
+            </div>
+        <!-- 搜索 电脑端显示，当屏幕小于768px时隐藏-->
+        <!-- 以下为中部导航条,电脑端显示，当屏幕小于768px时隐藏-->
+        <nav>
+        <div class="container hidden-xs middle_box">
+        <div >
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        
+          <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">首页</a></li> 
+              <li><a href="#home" data-toggle="tab" aria-expanded="true">毛织</a></li>
+        <li><a href="#profile" data-toggle="tab" aria-expanded="false">辅料</a></li>
+           <li ><a href="#profile" data-toggle="tab" aria-expanded="false">机械</a></li>
+           <li ><a href="#profile" data-toggle="tab" aria-expanded="false">服装</a></li>
+           <li><a href="#profile" data-toggle="tab" aria-expanded="false">联系我们</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid --> 
+    </nav>
+        
+        <!-- 以上为中部导航条,电脑端显示，当屏幕小于768px时隐藏-->
+<!--        轮播start-->
+        <div class="container rolling_box">
+            <div class="row rolling">
+    <div id="myCarousel" class="carousel slide col-xs-12 col-sm-7 col-md-7 col-lg-7" data-ride="carousel">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/timg.jpeg" alt="First slide">
+            <div class="carousel-caption">标题 1</div>
+        </div>
+        <div class="item">
+            <img src="img/timg.jpeg" alt="Second slide">
+            <div class="carousel-caption">标题 2</div>
+        </div>
+        <div class="item">
+            <img src="img/timg.jpeg" alt="Third slide">
+            <div class="carousel-caption">标题 3</div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+        data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+                
+        <div class="rolling_right hidden-xs box-shadow col-sm-5 col-md-4 col-lg-4">
+              <ul class="rolling_about">
+                 <li>
+<!--                     用户头像-->
+                     <span><img class="user_logo" src="img/user.png"></span>
+                  </li>
+                  <li><span><a class="user_login" href="#">请登录</a></span></li>
+                  <li>
+                  <ul class="nav nav-justified">
+              <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">个人中心</a></li> 
+              <li><a href="#home" data-toggle="tab" aria-expanded="true">资讯发布</a></li>
+                 
+            </ul>
+                       </li>
+                  <li>
+             <ul class="nav nav-justified">
+              <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">收藏夹</a></li> 
+              <li><a href="#home" data-toggle="tab" aria-expanded="true">企业推广</a></li>
+          </ul>
+                  </li>
+            </ul>
+                </div>
+                <div class="visible-xs phone_btn">
+                <div class="btn col-xs-3"><a href="#" class="btn"><img src="img/maoliao.png" class="icon"><br/>毛料</a></div>
+                <div class="btn col-xs-3"><a href="#" class="btn"><img src="img/fuzhuang.png" class="icon"><br/>辅料</a></div>
+                <div class="btn col-xs-3"><a href="#" class="btn"><img src="img/jixie.png" class="icon"><br/>机械</a></div>
+                <div class="btn col-xs-3"><a href="#" class="btn"><img src="img/fuliao.png" class="icon"><br/>服装</a></div>
+                </div>
+        </div> 
+            </div>
+<!--        轮播end-->
+        <div class="container tab_box">
+            <div class="index_tab row">
+           <div class="col-xs-6 col-sm-6 col-md-10 col-lg-10"><a href="#" class="btn btn-primary">栏目一</a></div>
+            <div class="more col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="#" class="btn" style="float:right">更多>></a></div>
+        </div>
+            </div>
+        <div class="container">
+            <div class="product row">
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+        
+        
+        <div class="container tab_box">
+            <div class="index_tab row">
+           <div class="col-xs-6 col-sm-6 col-md-10 col-lg-10"><a href="#" class="btn btn-primary">栏目二</a></div>
+            <div class="more col-xs-6 col-sm-6 col-md-2 col-lg-2"><a href="#" class="btn" style="float:right">更多>></a></div>
+        </div>
+            </div>
+        <div class="container">
+            <div class="product row">
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+    <div class="thumbnail">
+      <img src="img/jixie.png" alt="商品1">
+      <div class="caption">
+        <a href="#">商品1</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+         $('#carousel-ad').carousel();
+         $(function(){
+          $('#carousel-ad').carousel({
+           interval: 3000
+          });
+       });
+    </script>
+    </body>
+    </html>
+
+

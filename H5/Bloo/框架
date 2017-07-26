@@ -1,0 +1,24 @@
+1，为什么要用框架。
+框架的使用可以节省开发时间，提高代码重用性，让开发变得更简单。
+2,bootstrap框架。
+轻量级的前端框架,简单容易上手
+1,引入三个<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+!!!必须在引入css文件前引入
+1,栅格,分12格,必须放在row里面,row要放在container里面,以便为其赋予合适的排列（aligment）和内补（padding）,
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: -15px;抵消container的padding
+  margin-left: -15px;
+}
+col通过float实现布局,div是块级元素,当一行内添加一个块级元素后无法一般无法添加其他元素,通过设置float属性可放在一行内.默认时跟同级的兄弟块依次竖直排列，左右撑满
+2,组件使用.
+3,animate动画库
+4,jq
+

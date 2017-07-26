@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.search_box{
+    height: 125px;
+    position:relative;
+    margin: 35px auto auto auto;
+    z-index: 998;
+}
+.page_width{
+    margin: 0 auto;
+    width: 1000px;
+}
+.search_auto_size{
+    width: 1000px;
+    margin: 0 auto auto auto;
+}
+.search{
+    position: absolute;
+    width: 1000px;
+    height: 125px;
+}
+.left_logo{
+    float:left;
+    margin: 17px;
+    z-index: 120;
+}
+.search_right{   
+    margin: 30px;
+    display: inline-block;
+    width: 550px;
+    height: 90px;
+    background: #fff;
+}

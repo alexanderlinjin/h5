@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <a>{{msg}}</a>
+    <a>{{title}}</a>
+</div>
+
+<script>
+// 注册      
+var message={
+    msg:'nihao a',
+    title:'111111'
+}
+// 创建根实例
+new Vue({
+  el: '#app',
+    data:message
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.head{
+    text-align: center;
+}
+.body tr{
+    border: 1px solid #f1f1f1;
+    padding: 15px;
+}
+.body td{
+    padding: 15px;
+}

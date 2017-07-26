@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    </head>
+<body>
+    <canvas id="background" style="position: absolute;left: 0;top:0;height:100%;width:100%；background-attachment:fixed；"></canvas>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-3 col-lg-3"></div>
+        <div class="login_box col-xs-12 col-sm-8 col-md-6 col-lg-6">   
+                <div class="head">
+            <div class="head_left">
+                <a href="#">返回首页</a>
+               </div>
+                    <div class="head_right"> <a  href="#">已有账号？去登录</a></div>
+                        </div>
+                <div class=" box-shadow-3">
+            <div class="logo">
+                <img src="img/jjh.png">
+            </div>
+
+
+    <div class="btn_box input-group">
+    <input class="form-control" id="phone" type="text" placeholder="手机号码">
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button" style="max-width:110px" data-toggle="modal" data-target="#myModal">获取验证码</button>
+    </span>
+  </div>
+
+    <div class="btn_box">
+    <input class="form-control" id="yanzhengma" type="text" placeholder="验证码" maxlength="6">
+  </div>
+
+    <div class="btn_box">
+    <input class="form-control" id="userName" type="text" placeholder="用户名" maxlength="12">
+  </div>
+
+    <div class="btn_box">
+    <input class="form-control" id="passwd" type="password" placeholder="设置密码(8-16位)" maxlength="16">
+  </div>
+        <div class="btn_box">
+    <input class="form-control" id="passwd" type="password" placeholder="确认密码" maxlength="16">
+  </div>
+                
+                
+            <div class="checkbox" style="text-align:center">
+           <label>
+            <input id="checkbox" type="checkbox">我已阅读并同意<a href="#">《金金汇使用协议》</a>
+           </label>
+              
+            </div>
+              <div class="foot_btn btn-group btn-group-justified">
+<a href="#" class="btn btn-primary">注册</a>
+</div>        
+                    <div class="footer" style="text-align:center"> <a href="#">金金汇</a><a href="#">|联系客服</a></div>
+        </div>
+             </div>  
+        
+             </div>
+
+         <div class="col-sm-2 col-md-3 col-lg-3"></div>
+</div>
+    <!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					验证
+				</h4>
+			</div>
+			<div class="modal-body">
+				在这里添加一些文本
+			</div>
+			<div class="modal-footer">
+                <div class="row">
+                    <div class="col-lg-4"></div>
+				<div class="input-group col-lg-8">     
+            <input class="form-control" type="text" placeholder="计算结果">
+            <span class="input-group-btn">
+             <button class="btn btn-primary" type="button"  data-toggle="modal" data-target="#myModal">提交</button>
+            </span>
+            </div>
+                </div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+    
+    <script src="js/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="js/bootstrap.min.js"  type="text/javascript"></script>
+    <script type="text/javascript">
+//        背景
+    var back;
+    var ctx;
+    $(function () {
+        $(window).resize(reSizeCanvas);
+        back = $('#background')[0];
+        if (back.getContext)
+            ctx = back.getContext("2d");
+        reSizeCanvas();
+    })
+    function draw() {
+        if (ctx){
+            ctx = back.getContext("2d");
+            var w=$(back).width();
+            if (w<800)
+                w=800;
+            var h=$(back).height();
+            if (h<600)
+                h=600;
+            ctx.beginPath();
+            ctx.moveTo(0,0);
+            ctx.lineTo(0,h);
+            ctx.lineTo(w/4,h);
+            ctx.lineTo(w/8,0);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(255,255,255)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(w/8,0);
+            ctx.lineTo(w/4,h);
+            ctx.lineTo(w/3,0);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(245,245,245)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(w/3,0);
+            ctx.lineTo(w/7*4,h);
+            ctx.lineTo(w/4,h);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(235,235,235)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(w/7*5,0);
+            ctx.lineTo(w/7*4,h);
+            ctx.lineTo(w/4,0);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(225,225,225)";
+            ctx.fill();
+
+
+            ctx.beginPath();
+            ctx.moveTo(w/7*5,0);
+            ctx.lineTo(w/7*4,h);
+            ctx.lineTo(w/7*6,h);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(215,215,215)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(w/7*6,h);
+            ctx.lineTo(w,h/3);
+            ctx.lineTo(w,0);
+            ctx.lineTo(w/7*5,0);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(205,205,205)";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(w/7*6,h);
+            ctx.lineTo(w,h);
+            ctx.lineTo(w,h/3);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(225,225,225)";
+            ctx.fill();
+        }
+    }
+    function reSizeCanvas() {
+        if (back) {
+            $(back).attr("width", $('body').width());
+            $(back).attr("height", $('body').height());
+        }
+        draw();
+    }
+        
+</script>
+    </body>
+</html>

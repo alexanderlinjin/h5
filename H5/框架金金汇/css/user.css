@@ -1,0 +1,95 @@
+html,body{  
+     height:100%;  
+     width:100%;  
+}
+.visible-xs a{
+    font-size: 12px;
+}
+.navbar{
+    padding: 0;
+    margin:0;
+}
+.navbar-header .pull-left{
+    margin-left: 15px;
+}
+.search_button{
+    margin-left: 5px;
+}
+.navbar-header .pull-left{
+    margin-left: 15px;
+}
+.navbar-header .pull-left{
+    margin-left: 15px;
+}
+.search_box .container-fluid{
+    background-color:#2780e3;
+}
+.search_logo{
+    padding: 10px;
+}
+.user_search{
+    padding: 20px;
+}
+.user_left{
+    height: 100%;
+    position: relative;
+}
+.panel-heading{
+    text-align: center;
+}
+.panel_body ul{
+    padding: 0;
+    margin: 0;
+}
+.panel_body ul li{
+    list-style: none;
+}
+.panel_body .btn:hover,.panel_body .btn:visited{
+    background-color: #2780e3;
+}
+.user_middle{
+    position: relative;
+    top: 10px;
+}
+.user_logo{
+    padding: 5px;
+}
+.editor{
+    float: right;
+    padding: 5px;
+}
+.middle_head{
+    padding-bottom: 15px;
+    padding-left: 40px;
+    border-bottom: 1px solid #2780e3;
+}
+.middle_body_ul li{
+    list-style:none;
+    text-decoration: none;
+    display: inline;
+}
+.user_middle_2{
+    position: relative;
+    top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.my_order li{
+    text-align: center;
+}
+.nav_border{
+    
+    border-bottom: 1px solid #2780e3;
+}
+.user_middle_advice{
+    position: relative;
+    top: 40px;  
+}
+.middle_like{
+    padding-top: 10px;
+}
+.box-shadow{  
+  -webkit-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+  -moz-box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+  box-shadow:0 0 10px rgba(150, 150, 150, .5);  
+}  

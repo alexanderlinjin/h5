@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*头部*/
+.navbar{
+    z-index: 999;
+}
+.navbar-brand{
+    font-size: 13px;
+}
+.navbar-collapse{
+    background-color:#f8f8f8;
+}
+/*隐藏的头部*/
+header .container{
+    padding: 0;!importent;
+}
+.user_button{
+    text-align: center;
+    height: 50px;
+    line-height: 50px
+}
+.user_button .btn{
+    margin-left: 10px;
+}
+.index_login{
+    float:left;
+    height:50px;
+    padding:15px 1px;
+    font-size:13px;
+    line-height:20px;
+}
+.search_input_box{
+    padding: 15px;
+    padding-right: 0;
+}
+.search_input{
+    width: 85%;
+}
+.navbar-header .pull-left{
+    margin-left: 15px;
+}
+.search_button{
+    margin-left: 5px;
+}
+.phone_user{
+    float: right;
+    padding: 0;!importent;
+}
+/*搜索*/
+.logo{
+    text-align: center;
+}
+.search{
+    padding: 15px;
+}
+.phone_right{
+    float: right;
+    padding: 15px;
+    list-style: none;
+}
+/*中部导航*/
+.nav-pills{
+    border-bottom: 2px solid #2780e3;
+    padding-top: 20px;
+}
+.middle_box{
+    padding: 0;
+    padding-bottom: 20px;
+}
+/*轮播*/
+.carousel{
+    padding: 0;
+}
+.rolling_right{
+    position: relative;
+    float: right;
+}
+.rolling_right ul li{
+    padding: 3px;
+}
+.rolling_about{
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+}
+.user_logo{
+    border: 1px solid #e7e7e7;
+    width: 80px;
+    height: 80px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.phone_btn .btn{
+    padding: 0; 
+}
+.phone_btn .btn:hover,.phone_btn .btn:visited{
+    color: #2780e3;
+}
+.box-shadow{  
+  -webkit-box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+  -moz-box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+  box-shadow:0 0 10px rgba(150, 150, 150, 0.25);  
+}
+/*栏目组*/
+.tab_box{
+    padding-right: 30px;
+    padding: 0;  
+    padding-top: 25px;
+    border-bottom: 1px solid #2780e3;
+}
+.product{
+    padding-top: 15px;
+}
+.thumbnail{
+    padding: 0;
+}
+.caption{
+    text-align: center;
+}
+.more .btn:hover,.more .btn:visited{
+    color: #2780e3;
+}
+/*footer*/
+.footer{
+    position: relative;
+    background-color: #f8f8f8;
+    padding-top: 15px;
+    width: 100%;
+    border-top: 2px solid #f1f1f1;
+}
+.footer ul{
+    text-align: center;
+}
+.footer ul:nth-child(1) li{
+    padding: 15px;
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+}
+.footer ul:nth-child(1) li a:hover{
+    text-decoration: none;
+}
+
+.footer ul:nth-child(2) li{
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+/*轮播，脚部那块自己做响应式适配各种大小屏幕，主要是高度问题*/
+@media (min-width:1200px){
+    .rolling_box{
+        height: 400px;
+    }
+    .rolling_right{
+        height: 400px;
+    }
+    .carousel{
+        height: 400px;
+    }
+    .carousel-inner{
+        height: 400px;
+    }
+    .carousel-inner .item{
+        height: 400px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 400px;
+    }
+    .footer{
+        height: 200px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .rolling_box{
+        height: 300px;
+    }
+    .rolling_right{
+        height: 350px;
+    }
+    .carousel{
+        height: 350px;
+    }
+    .carousel-inner{
+        height: 350px;
+    }
+    .carousel-inner .item{
+        height: 350px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 350px;
+    }
+    .footer{
+        height: 160px;
+    }r
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .rolling_box{
+        height: 300px;
+    }
+    .rolling_right{
+        height: 300px;
+    }
+    .carousel{
+        height: 300px;
+    }
+    .carousel-inner{
+        height: 300px;
+    }
+    .carousel-inner .item{
+        height: 300px;!importent;
+    }
+    .carousel-inner .item img{
+        height: 300px;
+    }
+    .footer{
+        height: 120px;
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        height: 80px;
+    }
+}

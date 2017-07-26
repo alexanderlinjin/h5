@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Spirit 8</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.offcanvas.min.css" rel="stylesheet">
+    <link href="index_css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/user.css" rel="stylesheet" type="text/css">
+
+    <title>用户中心</title>
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 顶部导航条-->
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header row">
+                <!--        小于992px时显示在顶端的button-->
+                <!--        手机端顶部左边下拉按钮-->
+
+                <div class="col-xs-2">
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas"
+                            data-target="#js-bootstrap-offcanvas" style="float:left;">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+
+                <!--        手机端顶部用户按钮-->
+                                <div class="col-xs-2 phone_user" >
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2" style="float:right">
+                        <span class="glyphicon glyphicon-user"></span>
+
+                    </button>
+                </div>
+                <!--        手机端顶部搜索按钮-->
+                <div class="search_input_box visible-xs col-xs-8">
+                    <input class="search_input" type="text">
+                    <a class="search_button" href="index.html"><span class="glyphicon glyphicon-search"></span></a>
+                </div>
+                <!--        以上为小于992px时显示在顶端的button-->
+                <!--        以下a标签手机端不显示-->
+                <span id="hello">
+        <a class="navbar-brand hidden-xs">XX你好，欢迎访问金金汇</a>
+            </span>
+
+            </div>
+
+            <!-- 个人中心下拉框，手机端为顶部右端下拉-->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" style="font-size:13px">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">个人中心
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="font-size:13px;">
+                            <li><a href="#">我的主页</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的发布</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+            <!--      以上为下拉框-->
+
+            <!--    以上为右边下拉框  -->
+
+        </div>
+    </nav>
+</header>
+<!--            以下为xs下左边button和user button的侧拉列表，属性为visible-xs  -->
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-left navbar-offcanvas-touch navbar-offcanvas-fade visible-xs"
+     role="navigation" id="js-bootstrap-offcanvas" style="overflow-y: hidden;">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#" style="float:right">金金汇</a>
+            <!--                    若已登录则显示用户名-->
+            <button type="button" class="navbar-toggle offcanvas-toggle pull-left" data-toggle="offcanvas"
+                    data-target="#js-bootstrap-offcanvas">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button><!--返回按钮-->
+
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav" style="text-align:center">
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-pencil"></span>订单管理<span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="#">购物车</a></li>
+
+                        <li><a href="#">待发货</a></li>
+
+                        <li><a href="#">待收货</a></li>
+
+                        <li><a href="#">待评价</a></li>
+
+                        <li><a href="#">退款/售后</a></li>
+
+                    </ul>
+
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span>我的发布</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>我的收藏</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+<nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade visible-xs"
+     role="navigation" id="js-bootstrap-offcanvas-2" style="overflow-y: hidden;">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#" style="float:left">登录</a><a class="navbar-brand" href="#" style="float:left">注册</a>
+            <!--                    若已登录则显示用户名-->
+            <button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas"
+                    data-target="#js-bootstrap-offcanvas-2">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button><!--返回按钮-->
+
+        </div>
+
+        <div>
+            <ul class="nav navbar-nav">
+
+                <li><a href="#">编辑个人资料</a></li>
+
+                <li><a href="#">编辑个人资料</a></li>
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle">编辑个人资料<span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+
+                        <li><a href="#">购物车</a></li>
+
+                        <li><a href="#">待发货</a></li>
+
+                        <li><a href="#">待收货</a></li>
+
+                        <li><a href="#">待评价</a></li>
+
+                        <li><a href="#">退款/售后</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li><a href="#">客服帮助</a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- 顶部导航条-->
+<!--        搜索-->
+<div class="search_box">
+    <div class="container-fluid">
+        <div class="container hidden-xs bgColor">
+            <div class="row" style="height:76px">
+                <div class="search_logo col-sm-9 col-md-8 col-lg-8">
+                    <a><img src="img/jjh.png"></a>
+                    <button class="user_search  btn btn-primary" type="button" value="首页">首页</button>
+                    <button class="user_search  btn btn-primary" type="button" value="首页">账号管理</button>
+                    <button class="user_search  btn btn-primary" type="button" value="首页">服务</button>
+                </div>
+
+                <div class="user_search col-sm-3 col-md-4 col-lg-4">
+                    <div class="input-group">
+                        <input class="form-control" type="text">
+                        <span class="input-group-btn">
+          <button class="btn btn-primary" type="button">搜索</button>
+        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--        搜索-->
+</div>
+
+<div class="container">
+    <div class="row">
+        <!--        左边下拉列表    -->
+
+        <div class="user_left hidden-xs col-sm-3 col-md-3 col-lg-3 ">
+
+
+            <div class="panel-group" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true"
+                           aria-controls="collapseOne">
+                            交易前<span class="caret"></span>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel_body">
+                            <ul>
+                                <li><a class="btn nav-justified" href="#">进货单</a></li>
+                                <li><a class="btn  nav-justified" href="#">收藏夹</a></li>
+                                <li><a class="btn nav-justified" href="#">交易资料管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <a role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true"
+                           aria-controls="collapseTwo">
+                            交易前<span class="caret"></span>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby="headingTwo">
+                        <div class="panel_body">
+                            <ul>
+                                <li><a class="btn nav-justified" href="#">进货单</a></li>
+                                <li><a class="btn  nav-justified" href="#">收藏夹</a></li>
+                                <li><a class="btn nav-justified" href="#">交易资料管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <a role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="true"
+                           aria-controls="collapseThree">
+                            交易前<span class="caret"></span>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby="headingThree">
+                        <div class="panel_body">
+                            <ul>
+                                <li><a class="btn nav-justified" href="#">进货单</a></li>
+                                <li><a class="btn  nav-justified" href="#">收藏夹</a></li>
+                                <li><a class="btn nav-justified" href="#">交易资料管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--        左边下拉列表    -->
+
+        <div class="col-sm-9 col-md-9 col-lg-9">
+            <div class="user_middle col-sm-12 col-md-12 col-lg-12 box-shadow">
+                <div class="middle_box">
+                    <div class="middle_head">
+                <span>
+                <img class="user_logo" src="img/user.png">
+                </span>
+                        <span>
+                <a>杨朋举</a>
+                <a class="editor" href="#">编辑个人资料</a>
+                </span>
+                    </div>
+                    <div class="middle_body">
+<!--                        PC端-->
+                        <ul class="nav navbar-nav hidden-xs">
+                            <li class="col-xs-4"><a href="#">待办事项</a></li>
+                            <li class="col-xs-4"><a href="#">收货地址</a></li>
+                            <li class="col-xs-4"><a href="#">收藏夹</a></li>
+                            <li class="col-xs-4"><a href="#">待付款</a></li>
+                            <li class="col-xs-4"><a href="#">待发货</a></li>
+                            <li class="col-xs-4"><a href="#">待收货</a></li>
+                            <li class="col-xs-4"><a href="#">待评价</a></li>
+                            <li class="col-xs-5"><a href="#">退款/退货</a></li>
+                        </ul>
+<!--                        phone端-->
+                        <ul class="nav navbar-nav visible-xs" style="font-size:12px;">
+                        <li class="col-xs-4"><a href="zhuce.html">关注的商品</a></li>
+                        <li class="col-xs-4"><a href="zhuce.html">关注的店铺</a></li>
+                        <li class="col-xs-4"><a href="zhuce.html">浏览记录</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+                
+
+            <div class="user_middle_2 box-shadow visible-xs"><!--            这个DIV是模板，当左拉菜单点击如我的收藏时，该DIV显示点击的内容，不再单独做页面-->
+                    <ul class="nav nav_border">
+                        <li class="col-xs-6"><a href="#">我的发布</a></li>
+                        <li class="col-xs-6"><a href="#" style="float:right"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    </ul>
+                    <ul class="nav my_order">
+                        <li class="col-xs-4"><a href="#"><span class="glyphicon glyphicon-check"></span><br/>已发布</a></li>
+                        <li class="col-xs-4"><a href="#"><sapn class="glyphicon glyphicon-edit"></sapn><br/>待发布</a></li>
+                        <li class="col-xs-4"><a href="#"><sapn class="glyphicon glyphicon-book"></sapn><br/>草稿</a></li>
+                    </ul>
+                    
+                </div>
+            
+            <div class="user_middle_advice col-sm-12 col-md-12 col-lg-12 box-shadow">
+                <div class="row ">
+                    <div class="col-lg-10"><a class="btn btn-primary" style="font-size:12px;">最近浏览</a></div>
+                </div>
+                <div class="row middle_like">
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                        <div class="thumbnail">
+                            <a href="#"><img src="img/jixie.png" alt="商品1"></a>
+                            <div class="caption">
+                                <a href="#">商品1</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.offcanvas.min.js"></script>
+</body>
+</html>

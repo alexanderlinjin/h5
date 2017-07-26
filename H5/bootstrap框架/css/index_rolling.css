@@ -1,0 +1,16 @@
+.rolling_box{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.rolling{
+    width: 700px;
+    padding-top: 10px;
+}
+.rolling_form{
+    width: 300px;
+    left: 700px;
+    top: -350px;
+    z-index: 999;
+    position: relative;
+}
